@@ -1,0 +1,203 @@
+{
+ "version": 1,
+ "models": [
+  {
+   "id": "small",
+   "label": "Small",
+   "name": "Transformer trained from scratch on Rechen-Lisp pairs",
+   "bytes": 11672424,
+   "sha256": "a4ee4d3093f1cbda22eb3e9ea5a0cc3b26401f54db28ab872169f1fc12389b62",
+   "parts": [
+    {
+     "name": "rechengeist-small.weights",
+     "bytes": 11672424
+    }
+   ],
+   "format": "RGW1",
+   "eval": {
+    "fresh1": {
+     "label": "Fresh set 1: hand-written, used while developing",
+     "n": 300,
+     "policy": {
+      "right": 268,
+      "wrong": 32,
+      "refused": 0,
+      "right_pct": 89.33,
+      "wrong_pct": 10.67,
+      "refused_pct": 0
+     },
+     "greedy": {
+      "right": 264,
+      "wrong": 32,
+      "refused": 4,
+      "right_pct": 88,
+      "wrong_pct": 10.67,
+      "refused_pct": 1.33
+     },
+     "widened_to_beam": 26,
+     "beam_answers_given": 26,
+     "beam_answers_right": 13
+    },
+    "fresh2": {
+     "label": "Fresh set 2: hand-written, held back, run once at the end",
+     "n": 150,
+     "policy": {
+      "right": 123,
+      "wrong": 27,
+      "refused": 0,
+      "right_pct": 82,
+      "wrong_pct": 18,
+      "refused_pct": 0
+     },
+     "greedy": {
+      "right": 120,
+      "wrong": 25,
+      "refused": 5,
+      "right_pct": 80,
+      "wrong_pct": 16.67,
+      "refused_pct": 3.33
+     },
+     "widened_to_beam": 21,
+     "beam_answers_given": 21,
+     "beam_answers_right": 10
+    },
+    "fresh3": {
+     "label": "Fresh set 3: written blind to the language and engine, 61% multi-step, run once",
+     "n": 200,
+     "policy": {
+      "n": 200,
+      "right": 159,
+      "wrong": 39,
+      "refused": 2,
+      "right_pct": 79.5,
+      "wrong_pct": 19.5,
+      "refused_pct": 1
+     },
+     "greedy": {
+      "n": 200,
+      "right": 151,
+      "wrong": 38,
+      "refused": 11,
+      "right_pct": 75.5,
+      "wrong_pct": 19,
+      "refused_pct": 5.5
+     },
+     "widened_to_beam": 36,
+     "beam_answers_given": 34,
+     "beam_answers_right": 15
+    }
+   },
+   "headline": {
+    "key": "fresh2",
+    "label": "held-back problems",
+    "n": 150,
+    "right_pct": 82,
+    "wrong_pct": 18,
+    "refused_pct": 0
+   }
+  },
+  {
+   "id": "large",
+   "label": "Large",
+   "name": "SmolLM2-135M fine-tuned on Rechen-Lisp pairs",
+   "bytes": 115726304,
+   "sha256": "7e34c120af0203341f2a27a16aea3a1978d9d9af907cb0f2b1be2ef8e29d29df",
+   "parts": [
+    {
+     "name": "rechengeist.weights.part0",
+     "bytes": 45000000
+    },
+    {
+     "name": "rechengeist.weights.part1",
+     "bytes": 45000000
+    },
+    {
+     "name": "rechengeist.weights.part2",
+     "bytes": 25726304
+    }
+   ],
+   "format": "RGW2",
+   "eval": {
+    "fresh1": {
+     "label": "Fresh set 1: hand-written, used while developing",
+     "n": 300,
+     "policy": {
+      "right": 280,
+      "wrong": 18,
+      "refused": 2,
+      "right_pct": 93.33,
+      "wrong_pct": 6,
+      "refused_pct": 0.67
+     },
+     "greedy": {
+      "right": 279,
+      "wrong": 15,
+      "refused": 6,
+      "right_pct": 93,
+      "wrong_pct": 5,
+      "refused_pct": 2
+     },
+     "widened_to_beam": 6,
+     "beam_answers_given": 4,
+     "beam_answers_right": 1
+    },
+    "fresh2": {
+     "label": "Fresh set 2: hand-written, held back, run once at the end",
+     "n": 150,
+     "policy": {
+      "right": 135,
+      "wrong": 13,
+      "refused": 2,
+      "right_pct": 90,
+      "wrong_pct": 8.67,
+      "refused_pct": 1.33
+     },
+     "greedy": {
+      "right": 134,
+      "wrong": 12,
+      "refused": 4,
+      "right_pct": 89.33,
+      "wrong_pct": 8,
+      "refused_pct": 2.67
+     },
+     "widened_to_beam": 4,
+     "beam_answers_given": 2,
+     "beam_answers_right": 1
+    },
+    "fresh3": {
+     "label": "Fresh set 3: written blind to the language and engine, 61% multi-step, run once",
+     "n": 200,
+     "policy": {
+      "n": 200,
+      "right": 164,
+      "wrong": 31,
+      "refused": 5,
+      "right_pct": 82,
+      "wrong_pct": 15.5,
+      "refused_pct": 2.5
+     },
+     "greedy": {
+      "n": 200,
+      "right": 163,
+      "wrong": 27,
+      "refused": 10,
+      "right_pct": 81.5,
+      "wrong_pct": 13.5,
+      "refused_pct": 5
+     },
+     "widened_to_beam": 12,
+     "beam_answers_given": 7,
+     "beam_answers_right": 2
+    }
+   },
+   "headline": {
+    "key": "fresh2",
+    "label": "held-back problems",
+    "n": 150,
+    "right_pct": 90,
+    "wrong_pct": 8.67,
+    "refused_pct": 1.33
+   }
+  }
+ ]
+}
