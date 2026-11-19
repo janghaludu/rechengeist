@@ -49,6 +49,14 @@ Right / wrong / refused percentages for Large and Small on the original hand-wri
 
 The program the reader wrote is shown beside the solution so you can check how the question was interpreted.
 
+## License
+
+Rechengeist’s original source code is available under the [MIT License](LICENSE).
+
+- The Large weights are a fine-tuned and repackaged derivative of SmolLM2-135M. See the [upstream model card](https://huggingface.co/HuggingFaceTB/SmolLM2-135M) and [Apache License 2.0](licenses/Apache-2.0.txt).
+- The page bundles KaTeX 0.16.11. See its [MIT notice](licenses/KaTeX-MIT.txt).
+- Small 11 includes retrieval vectors derived from SVAMP. See the [SVAMP notice](small11/SVAMP-LICENSE).
+
 ## Credits
 
 Rechengeist is by Sriharsha Bangaru, Galleri5 Technologies Pvt. Ltd.
