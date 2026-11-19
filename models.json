@@ -198,6 +198,22 @@
     "wrong_pct": 8.67,
     "refused_pct": 1.33
    }
+  },
+  {
+   "id": "small11",
+   "label": "Small 11 · experimental",
+   "name": "Tuned Small reader with the adaptive math harness",
+   "format": "RGW1",
+   "bytes": 11672424,
+   "sha256": "10a97c9b58253d4d8b9a248961dcf68176c5936ccd577bb627a39c8dcf63285b",
+   "parts": [
+    {
+     "name": "rechengeist-small.weights",
+     "bytes": 11672424
+    }
+   ],
+   "weightEdits": "small11/weight-edits.json",
+   "eval": {}
   }
  ]
 }

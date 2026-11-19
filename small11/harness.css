@@ -1,0 +1,12 @@
+.feedback-harness {
+  margin-block: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid currentColor;
+  border-radius: 0.65rem;
+  overflow-wrap: anywhere;
+}
+.feedback-harness summary { cursor: pointer; font-weight: 600; }
+.feedback-harness details { margin-block: 0.7rem; }
+.feedback-harness pre { white-space: pre-wrap; }
+.harness-controls { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.harness-controls [aria-pressed="true"] { outline: 2px solid currentColor; }
